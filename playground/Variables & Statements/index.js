@@ -32,9 +32,11 @@
     ------------------------------------------------------------------
     NAMING VARIABLES
     - Names should begin with a lowercase string
-    - Names cannot contain symbols or begin with a symbol
+    - Names cannot contain symbols or begin with a symbol except $ and _
     - Names cannot begin with a number
     - Names can contain a mix of uppercase strings, lowercase strings & numbers
+    - camelCasing is applied to names containing more than one word
+    - Only constructor names should start with a capital letter as the first word
 */
 
 // line below necessary to disable eslint rules  for illustration
@@ -53,5 +55,5 @@ const gender = 'Male';
 //gender = 'Female'; //error, can't reassign const variables
 
 
-isMarried = false;  
-console.log(isMarried); //returns undefined in strict mode, otherwise, false
+//isMarried = false;  
+//console.log(isMarried); //returns undefined in strict mode, otherwise, false
