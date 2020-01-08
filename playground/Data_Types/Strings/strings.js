@@ -33,8 +33,9 @@ const html = `
               <p>${greetings}</p>
              `;
 document.body.innerHTML = html;
+/* eslint-enable */
 
-/*---------------STRING PROPERTIES & INDEXES -------------------------------------
+/* ---------------STRING PROPERTIES & INDEXES -------------------------------------
 - property: length
 - zero-based indexing
 - To get the index of a character from a string, use the:
@@ -43,17 +44,26 @@ document.body.innerHTML = html;
 */
 const pizza = 'pepperoni';
 
-//To get the length of the string
-const length = pizza.length; 
+// To get the length of the string
+// eslint-disable-next-line prefer-destructuring
+const length = pizza.length;
 console.log(length);
 
-//To get the first letter
+// To get the first letter
 const firstChar = pizza.charAt(0);
 const firstLetter = pizza[0];
 console.log(firstChar, firstLetter); // 9, p, p
 
-//To get the last letter
+// To get the last letter
 const lastChar = pizza.charAt(length - 1);
 const lastLetter = pizza[length - 1];
 console.log(lastChar, lastLetter);
 
+/* -----------------------STRINGS & IMMUTABILITY-----------------------------------------
+- Strings are immutable i.e. cannot be modified after it is created
+N/B: Everything is an Object in JavaScript
+*/
+
+// Makes a copy of the value & converts to uppercase without altering the original string
+const immutableString = 'I shall not change!';
+console.log(immutableString.toUpperCase());
