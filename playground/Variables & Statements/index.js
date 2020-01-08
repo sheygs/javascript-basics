@@ -5,17 +5,17 @@
     - Can be initialized
     - Can be updated
     - function scoped; only available inside the parent function
-    - Can be redeclared
+    - Can be redeclared in the same scope
  -> let
     - Can be initialized 
     - Can be updated
     -  blocked scoped {}
-    -  Can't be redeclared
+    -  Can't be redeclared in the same scope
  -> const
     - Can't be initialized (MUST be assigned a value)
     - Can't be updated
     - blocked scoped {}
-    - Can't be redeclared
+    - Can't be redeclared in the same scope
     -----------------------------------------------------------------
     - Variable declaration statements in JS are similar 
     to statements in English
