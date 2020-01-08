@@ -1,4 +1,4 @@
-/* ------------------STRINGS-----------------------------------------
+/* -----------------------------STRINGS-----------------------------------------
    - Strings are used to hold texts
    - There are 3 ways to create a String:
    -> Using single quotes ' '
@@ -33,3 +33,27 @@ const html = `
               <p>${greetings}</p>
              `;
 document.body.innerHTML = html;
+
+/*---------------STRING PROPERTIES & INDEXES -------------------------------------
+- property: length
+- zero-based indexing
+- To get the index of a character from a string, use the:
+   -> s.charAt() or 
+   -> s[i] where i is the index number
+*/
+const pizza = 'pepperoni';
+
+//To get the length of the string
+const length = pizza.length; 
+console.log(length);
+
+//To get the first letter
+const firstChar = pizza.charAt(0);
+const firstLetter = pizza[0];
+console.log(firstChar, firstLetter); // 9, p, p
+
+//To get the last letter
+const lastChar = pizza.charAt(length - 1);
+const lastLetter = pizza[length - 1];
+console.log(lastChar, lastLetter);
+
