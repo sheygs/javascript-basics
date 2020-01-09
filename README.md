@@ -2,7 +2,7 @@
 A complete guide to brush up my JavaScript fundamentals
 
 ## Learning Topics
-## Variables
+### Variables
 * [let vs const](https://wesbos.com/let-vs-const/)
 * [Is var dead](https://wesbos.com/is-var-dead/)
 * [es6 const](https://mathiasbynens.be/notes/es6-const)
