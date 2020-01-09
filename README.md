@@ -1,2 +1,2 @@
 # javaScript-basics
-A complete guide to re-brush up my JavaScript fundamentals
+A complete guide to brush up my JavaScript fundamentals
