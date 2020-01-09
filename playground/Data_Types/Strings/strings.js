@@ -89,19 +89,18 @@ console.log(toString('Pepperoni') instanceof String); // false
    -charAt()
    -charCodeAt()
    -fromCharCode()
-   -toLowerCase()/toUpperCase()
    -concat()
    -startsWith()/endsWith()
    -includes()
    -indexOf()/lastIndexOf()
    -match()/matchAll()
+   -padStart()/padEnd()
    -repeat()
    -replace()
-   -padStart()/padEnd()
    -slice()/substring()
    -split()
-  
    -trim()/trimEnd()/trimStart()
+   -toLowerCase()/toUpperCase()
    -toString()
  */
 
@@ -132,3 +131,29 @@ console.log(fullSentence);
 const isTrue = sentence.endsWith('best.');
 const isFalse = sentence.startsWith('free');
 console.log(isTrue, isFalse); // true, true
+
+// determines whether one string may be found in another string
+let found = sentence.includes('s');
+const found1 = sentence.includes('code');
+const found2 = sentence.includes('organize');
+console.log(found, found1, found2); // true, false, false
+
+// returns the position of the FIRST OCCURRENCE of a specified value in a string
+// returns -1 if value not found
+let index = sentence.indexOf('f');
+// returns the position of the FIRST OCCURRENCE of a specified value from a given index
+let index1 = sentence.indexOf('the', 15);
+let index2 = fullSentence.indexOf('q');
+console.log(index, index1, index2); // 0, 16, -1
+
+// returns the position of the LAST OCCURRENCE of a specified value in a string
+// returns -1 if value not found
+index = fullSentence.lastIndexOf('t');
+index1 = fullSentence.lastIndexOf('is');
+index2 = fullSentence.lastIndexOf('zation');
+console.log(index, index1, index2);
+
+// retrieves the result of matching a string against a regular expression.
+// matchAll - PINNED for later
+found = sentence.match(/[A-Z]/g);
+console.log(found); // ["C", "C"]
