@@ -67,3 +67,12 @@ N/B: Everything is an Object in JavaScript
 // Makes a copy of the value & converts to uppercase without altering the original string
 const immutableString = 'I shall not change!';
 console.log(immutableString.toUpperCase());
+
+// --------------------CORRECTLY TYPE-CHECKING STRINGS ----------------------------------
+
+console.log(typeof 'Pepperoni');
+console.log('Pepperoni' instanceof String);
+/* eslint-disable no-new-wrappers */
+console.log(new String('Pepperoni') instanceof String);
+console.log(String('Pepperoni') instanceof String);
+console.log(toString('Pepperoni') instanceof String);
