@@ -2,7 +2,7 @@
 A complete guide to brush up my JavaScript fundamentals
 
 ## Learning Topics
-### Variables
+## Variables
 * [let vs const](https://wesbos.com/let-vs-const/)
 * [Is var dead](https://wesbos.com/is-var-dead/)
 * [es6 const](https://mathiasbynens.be/notes/es6-const)
@@ -34,4 +34,14 @@ A complete guide to brush up my JavaScript fundamentals
 * [Scope](https://scotch.io/courses/10-need-to-know-javascript-concepts/scope)
 * [Understanding Scope in JavaScript](https://scotch.io/tutorials/understanding-scope-in-javascript)
 * [Function & Block scope differences](https://medium.com/@josephcardillo/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe)
+
+### Hoisting
+* [Hoisting](https://scotch.io/courses/10-need-to-know-javascript-concepts/hoisting)
+* [What is hoisting](https://codeburst.io/javascript-what-is-hoisting-dfa84512dd28)
+* [Hoisting I](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
+
+### Closures
+* [Understanding JavaScript Closure](https://programmingwithmosh.com/javascript/understanding-javascript-closure/)
+* [Beginners guide to Closure](https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda)
+* [Closures](https://scotch.io/courses/10-need-to-know-javascript-concepts/closures)
 
