@@ -86,11 +86,7 @@ console.log(new String('Pepperoni') instanceof String); // true
 console.log(String('Pepperoni') instanceof String); // false
 console.log(toString('Pepperoni') instanceof String); // false
 
-/* ---------------------------STRING METHODS-----------------------------------------------
-   -slice()/substring()
-   -trim()/trimEnd()/trimStart()
-   -toString()
- */
+// ---------------------------STRING METHODS-----------------------------------------------
 
 sentence = 'freeCodeCamp is the best.';
 /* eslint-disable-next-line prefer-destructuring */
@@ -177,3 +173,37 @@ console.log('pepperoni pepper'.split(' '));
 console.log('pepperoni~pepperoni'.split('~'));
 // limits the number of such splits to only 3
 console.log('The fox jumped over the dog'.split(' ', 3));
+
+/* extracts a section of a string and returns it as a new string, without modifying the original string.
+   - str.slice(beginIndex[, endIndex])
+   - beginIndex: zero-based index to begin extraction
+     -if -ve, str.length + beginIndex i.e. -3 => str.length - 3
+   - if beginIndex is >= str.length, slice() returns an empty string
+
+   - endIndex: The zero-based index before which to end extraction. 
+   - slice() extracts up to but not including endIndex
+   - if endIndex is omitted, slice() extracts to the end of the string
+*/
+const str = 'The quick brown fox jumps over the lazy dog.';
+console.log(str.slice(31)); // the lazy dog.
+console.log(str.slice(4, 19)); // quick brown fox
+console.log(str.slice(-4)); // dog.
+console.log(str.slice(-9, -5)); // lazy
+
+/*
+- extracts the characters from a string, between two specified indices, and returns the new sub string.
+- This method extracts the characters in a string between "start" and "end", not including "end" itself.
+- Does not modify the original string
+- substring()
+*/
+
+// removes ("trims") spaces from the beginning AND/OR end of the string
+console.log('   4435 2345 342  '.trim());
+console.log('   2348 8398 893'.trimStart());
+console.log('3478 83898   '.trimEnd());
+
+// returns a string representing the specified object.
+// can also be used to convert an array to string but not flexible as the join() method
+// which can specify any separator
+console.log((8).toString()); // "8"
+console.log(['1', '2'].toString()); // "1, 2"
