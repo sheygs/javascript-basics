@@ -1,4 +1,9 @@
 /*
+  Variable:
+    - It is like a container for storing a value
+    - The contained value can change
+    - variables may hold different type of data
+    
  3 ways to declare a variable are: var, let & const
  -------------------------------------------------------------------
  -> var
