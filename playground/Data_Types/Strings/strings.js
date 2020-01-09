@@ -50,7 +50,8 @@ console.log(definition);
    -> s.charAt() or 
    -> s[i] where i is the index number
 */
-const pizza = 'pepperoni';
+let pizza = 'pepperoni';
+let fish = 'tilapia';
 
 // To get the length of the string
 // eslint-disable-next-line prefer-destructuring
@@ -86,21 +87,8 @@ console.log(String('Pepperoni') instanceof String); // false
 console.log(toString('Pepperoni') instanceof String); // false
 
 /* ---------------------------STRING METHODS-----------------------------------------------
-   -charAt()
-   -charCodeAt()
-   -fromCharCode()
-   -concat()
-   -startsWith()/endsWith()
-   -includes()
-   -indexOf()/lastIndexOf()
-   -match()/matchAll()
-   -padStart()/padEnd()
-   -repeat()
-   -replace()
    -slice()/substring()
-   -split()
    -trim()/trimEnd()/trimStart()
-   -toLowerCase()/toUpperCase()
    -toString()
  */
 
@@ -157,3 +145,35 @@ console.log(index, index1, index2);
 // matchAll - PINNED for later
 found = sentence.match(/[A-Z]/g);
 console.log(found); // ["C", "C"]
+
+/*
+ - used to pad string with another string until it reaches a given length
+ - padding is applied from the left end of the string
+ - string.padStart(targetLength, padString)
+   - targetLength: length of the final string after padding, 
+    if the length is less than the original string length, the original
+    string is returned
+   - padString: string to be padded with the original string
+*/
+pizza = pizza.padStart(12, '***');
+fish = fish.padStart(6, '$$$');
+const padEnd = fish.padEnd(10, '%%%');
+console.log(pizza, fish, padEnd); // ***pepperoni tilapia tilapia%%%
+
+// repeat the string n times
+const repeated = pizza.repeat(3);
+console.log(repeated); // pepperoni  pepperoni  pepperoni
+
+/* searches a string for a specified value, or a regular expression, 
+and returns a new string where the specified values are replaced.
+*/
+const replace = 'pepperoni'.replace('roni', 'fire');
+const replace_ = 'pepperoni'.replace(/^peppe/, 'salt');
+console.log(replace, replace_);
+console.log('pepperoni'.replace(/oni$/, 'guy'));
+
+// used to split the given string into array of strings by separating it into substrings using a specified separator
+console.log('pepperoni pepper'.split(' '));
+console.log('pepperoni~pepperoni'.split('~'));
+// limits the number of such splits to only 3
+console.log('The fox jumped over the dog'.split(' ', 3));
