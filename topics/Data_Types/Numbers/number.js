@@ -66,3 +66,11 @@ console.log(99 instanceof Number); // false
 console.log(Number('99') instanceof Number); // false
 console.log(new Number('99') instanceof Number); // true
 console.log(Object.prototype.toString.call(99).slice(8, -1)); // Number
+
+/*
+- Exploring Number Methods
+*/
+console.log(Number.prototype);
+console.log(Number((56.34565).toFixed(2)));
+console.log(parseFloat((99.333999).toFixed(3)));
+console.log((34.34545454).toPrecision(2));
