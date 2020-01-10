@@ -1,5 +1,5 @@
 # Javascript Basics
-A complete guide to brush up my JavaScript fundamentals
+A complete guide to JavaScript fundamentals
 
 ## Learning Topics
 ### Variables
