@@ -38,7 +38,7 @@ A complete guide to brush up my JavaScript fundamentals
 ### Hoisting
 * [Hoisting](https://scotch.io/courses/10-need-to-know-javascript-concepts/hoisting)
 * [What is hoisting](https://codeburst.io/javascript-what-is-hoisting-dfa84512dd28)
-* [Hoisting I](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
+* [Understanding Hoisting](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
 
 ### Closures
 * [Understanding JavaScript Closure](https://programmingwithmosh.com/javascript/understanding-javascript-closure/)
