@@ -1,4 +1,4 @@
-## javascript-basics
+# Javascript Basics
 A complete guide to brush up my JavaScript fundamentals
 
 ## Learning Topics

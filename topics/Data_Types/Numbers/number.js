@@ -43,3 +43,17 @@ console.log(Number('f50'), Number('50r')); // NaN, NaN
 
 console.log(+'3.142', +'3'); // 3.142, 3
 console.log(9 + +'3.45'); // 12.45
+
+/*
+- Understanding Not-a-Number
+*/
+const result = Number('55px');
+/* eslint-disable no-restricted-globals */
+console.log(isNaN(result)); // true
+console.log(isNaN('I am a String!')); // true
+
+console.log(Number.isNaN(result)); // true
+console.log(Number.isNaN('I am another String!')); // false
+
+console.log(Number.isInteger(66.99)); // false
+console.log(Number.isFinite(34), Number.isFinite(Infinity)); // true, false
