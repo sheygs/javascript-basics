@@ -116,29 +116,32 @@ const isTrue = sentence.endsWith('best.');
 const isFalse = sentence.startsWith('free');
 console.log(isTrue, isFalse); // true, true
 
-// determines whether one string may be found in another string
+/* determines whether one string may be found in another string */
 let found = sentence.includes('s');
 const found1 = sentence.includes('code');
 const found2 = sentence.includes('organize');
 console.log(found, found1, found2); // true, false, false
 
-// returns the position of the FIRST OCCURRENCE of a specified value in a string
-// returns -1 if value not found
+/* returns the position of the FIRST OCCURRENCE of a specified value in a string
+   returns -1 if value not found
+*/
 let index = sentence.indexOf('f');
 // returns the position of the FIRST OCCURRENCE of a specified value from a given index
 let index1 = sentence.indexOf('the', 15);
 let index2 = fullSentence.indexOf('q');
 console.log(index, index1, index2); // 0, 16, -1
 
-// returns the position of the LAST OCCURRENCE of a specified value in a string
-// returns -1 if value not found
+/* returns the position of the LAST OCCURRENCE of a specified value in a string
+   returns -1 if value not found
+*/
 index = fullSentence.lastIndexOf('t');
 index1 = fullSentence.lastIndexOf('is');
 index2 = fullSentence.lastIndexOf('zation');
 console.log(index, index1, index2);
 
-// retrieves the result of matching a string against a regular expression.
-// matchAll - PINNED for later
+/* retrieves the result of matching a string against a regular expression.
+   matchAll - PINNED for later
+*/
 found = sentence.match(/[A-Z]/g);
 console.log(found); // ["C", "C"]
 
@@ -194,16 +197,31 @@ console.log(str.slice(-9, -5)); // lazy
 - extracts the characters from a string, between two specified indices, and returns the new sub string.
 - This method extracts the characters in a string between "start" and "end", not including "end" itself.
 - Does not modify the original string
-- substring()
+- substring(start, end)
+ - if end is omitted, substring extracts characters to the end of the string
+ - if start is equal end, substring() returns an empty string
+ - if start is greater than end, substring() swaps its two argument meaning a string is returned.
+ - The slice() method returns an empty string if this is the case
 */
+const browser = 'Mozilla';
 
-// removes ("trims") spaces from the beginning AND/OR end of the string
+// Displays M
+console.log(browser.substring(0, 1), browser.substring(1, 0));
+
+// Displays Mozill
+console.log(browser.substring(0, 6), browser.substring(6, 0));
+
+// Displays lla
+console.log(browser.substring(4), browser.substring(4, 7));
+
+/* removes ("trims") spaces from the beginning AND/OR end of the string */
 console.log('   4435 2345 342  '.trim());
 console.log('   2348 8398 893'.trimStart());
 console.log('3478 83898   '.trimEnd());
 
-// returns a string representing the specified object.
-// can also be used to convert an array to string but not flexible as the join() method
-// which can specify any separator
+/* returns a string representing the specified object.
+   can also be used to convert an array to string but not flexible as the join() method
+   which can specify any separator 
+*/
 console.log((8).toString()); // "8"
 console.log(['1', '2'].toString()); // "1, 2"
