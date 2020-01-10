@@ -57,3 +57,12 @@ console.log(Number.isNaN('I am another String!')); // false
 
 console.log(Number.isInteger(66.99)); // false
 console.log(Number.isFinite(34), Number.isFinite(Infinity)); // true, false
+
+/*
+ - Correctly Type-Checking Numbers
+*/
+console.log(typeof 99); // number
+console.log(99 instanceof Number); // false
+console.log(Number('99') instanceof Number); // false
+console.log(new Number('99') instanceof Number); // true
+console.log(Object.prototype.toString.call(99).slice(8, -1)); // Number
