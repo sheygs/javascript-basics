@@ -27,3 +27,19 @@ console.log(price * quantity); // returns 27.999999999999999
 const anotherPrice = 9.33 * 100;
 const anotherQuantity = 3;
 console.log((anotherPrice * anotherQuantity) / 100);
+
+/*
+   Parsing Strings to Numbers
+   -parseInt(string, radix)
+   -parseFloat(string)
+   -Number()
+   - Unary plus +
+*/
+console.log(parseInt('34px', 10)); // 34
+console.log(parseFloat('34.559px')); // 34.559
+
+console.log(Number('50e10')); // 50 * 10000000000
+console.log(Number('f50'), Number('50r')); // NaN, NaN
+
+console.log(+'3.142', +'3'); // 3.142, 3
+console.log(9 + +'3.45'); // 12.45
