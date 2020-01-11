@@ -27,4 +27,11 @@ console.log(Object.prototype.toString.call(true)); // [object Boolean]
 
 /*
  - Equality: == vs === 
+ (strict equality === ) - checks that the type and value are the same
+ (equality ==) - checks that the value are the same
 */
+/* eslint-disable*/
+console.log(10 == '10'); // true
+console.log(10 === '10'); // false
+console.log(10 != '10'); // false
+console.log(10 !== '10'); // true
