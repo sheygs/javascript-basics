@@ -11,3 +11,17 @@ console.log(age); // undefined
 // It is an object
 const nothing = null;
 console.log(nothing); // null
+
+/* eslint-disable */
+const walter = {
+  first: 'Walter'
+};
+console.log(walter.last);
+
+const teller = {
+  first: 'Raymond',
+  last: 'Teller'
+}
+teller.first = 'Teller';
+teller.last = null;
+console.log(teller);
