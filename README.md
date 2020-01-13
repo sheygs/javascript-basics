@@ -22,6 +22,7 @@ A complete guide to JavaScript fundamentals
 * [Array methods you should know](https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3)
 
 ### Functions
+* [Function Declarations & Expressions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
 * [Arrow Functions](https://wesbos.com/arrow-functions/)
 * [Arrow Function examples](https://wesbos.com/arrow-function-examples/)
 * [When Not to use an Arrow Function](https://wesbos.com/arrow-function-no-no/)
