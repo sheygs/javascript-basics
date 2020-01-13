@@ -7,16 +7,12 @@
    - Function are "objects"
 */
 
-function calculateBill() {
-  console.log('Calculating Bill...');
-  // total + tax
-  return 100 * 1.13;
-}
-
-calculateBill();
-
 /* 
-  - WAYS TO DEFINE A FUNCTION
+----------------WAYS TO DEFINE A FUNCTION-------------------------------------
+- Three primary ways:
+  (i) Function Declaration
+  (ii) Function Expression
+  (iii) Arrow Functions
 */
 
 /* 
@@ -31,7 +27,7 @@ calculateBill();
 /* eslint-disable-next-line */
 console.log(doctorize('Olusegun'));  // Dr. Olusegun
 
-function doctorize(name) {
+function doctorize(name = '') {
   return ` Dr. ${name}`;
 }
 
@@ -46,11 +42,17 @@ function doctorize(name) {
 
 //console.log(doctorize2('Ade')); // cannot access doctorize before initialization
 
+// anonymous function expression
 let doctorize2 = function(name) {
   return `Dr. ${name}`;
 };
-console.log(doctorize2('Kola')); // Dr. Kola
 
+// named function expression
+let doctorize3 = function doctor(name){
+  return `Dr. ${name}`;
+}
+console.log(doctorize2('Kola')); // Dr. Kola
+console.log(doctorize3('Les'));  // Dr. Les
 
 /*
 3) Arrow Functions
@@ -132,6 +134,8 @@ const sheygs = {
 };
 console.log(sheygs);
 
+/* eslint-enable */
+
 /*
 6) CALLBACK FUNCTIONS
   - It is a function that is passed as an argument to another function
@@ -153,13 +157,36 @@ const button = document.querySelector('.click-me');
 
 // method 3
 // "this" refers to the window object
-// button.addEventListener('click', () => console.log(this)); 
+// button.addEventListener('click', () => console.log(this));
 
 // "this" refers to the button
-button.addEventListener('click', function () { 
+button.addEventListener('click', function() {
   console.log(this, 'Nice!');
 });
 
-
 // Timer callbacks
-setTimeout(function(){ console.log(this) }, 3000); // "this" refers to the Window object
+// setTimeout(function() {
+//   console.log(this);
+// }, 3000); // "this" refers to the Window object
+
+/* FUNCTIONS - PARAMETERS & ARGUMENTS */
+// Parameters - placeholders when functions are defined
+// arguments -  actual values when functions are called, run or invoked
+
+// keyword // func. name // parameters  //default values
+function calculateBill(bill, taxRate = 0.13, tipRate = 0.15) {
+  // scope start
+  return bill * (1 + taxRate + tipRate); // return statement/ function body
+} // scope end
+
+console.log(calculateBill(100)); // 127.999999999999
+console.log(calculateBill(100, 0.15)); // 129.999999999999
+console.log(calculateBill(100, undefined)); // 127.99999999999
+
+// calling functions inside functions
+function yell(name) {
+  return `HEY ${name.toUpperCase()}`;
+}
+
+console.log(yell(doctorize())); // HEY DR. ''
+console.log(yell(doctorize('Samuel'))); // HEY DR. SAMUEL
