@@ -209,8 +209,8 @@ console.log(sum(1, 2, 3, 4, 5));
 /* eslint-enable */
 
 // New Approach using Rest parameters (rest of the arguments)
-function sumRest(...args) {
+const sumRest = (...args) => {
   console.log(args, Array.isArray(args));
   return args.reduce((a, b) => a + b);
-}
+};
 console.log(sumRest(3, 6, 9, 12));
