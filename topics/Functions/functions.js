@@ -150,26 +150,29 @@ const button = document.querySelector('.click-me');
 // button.addEventListener('click', sheygs.whisper);
 
 // method 2
-// function handleClick(){
-//   console.log(this);
-// }
-// button.addEventListener('click', handleClick);
+function handleClick() {
+  console.log(this);
+}
+button.addEventListener('click', handleClick);
 
 // method 3
 // "this" refers to the window object
 // button.addEventListener('click', () => console.log(this));
 
 // "this" refers to the button
-button.addEventListener('click', function() {
-  console.log(this, 'Nice!');
-});
+// button.addEventListener('click', function() {
+//   console.log(this, 'Nice!');
+// });
 
 // Timer callbacks
 // setTimeout(function() {
 //   console.log(this);
 // }, 3000); // "this" refers to the Window object
 
-/* FUNCTIONS - PARAMETERS & ARGUMENTS */
+/*
+ -----------FUNCTIONS: PARAMETERS & ARGUMENTS --------------
+*/
+
 // Parameters - placeholders when functions are defined
 // arguments -  actual values when functions are called, run or invoked
 
@@ -190,3 +193,24 @@ function yell(name) {
 
 console.log(yell(doctorize())); // HEY DR. ''
 console.log(yell(doctorize('Samuel'))); // HEY DR. SAMUEL
+
+/*
+--------------------REST PARAMETERS AND ARGUMENTS ----------------- 
+*/
+// Old Approach Using arguments
+/* eslint-disable */
+function sum() {
+  console.log(arguments, Array.isArray(arguments));
+  return Array.from(arguments).reduce((prev,curr) => {
+    return prev + curr;
+  })
+}
+console.log(sum(1, 2, 3, 4, 5));
+/* eslint-enable */
+
+// New Approach using Rest parameters (rest of the arguments)
+function sumRest(...args) {
+  console.log(args, Array.isArray(args));
+  return args.reduce((a, b) => a + b);
+}
+console.log(sumRest(3, 6, 9, 12));
