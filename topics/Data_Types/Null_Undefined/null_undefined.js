@@ -24,4 +24,4 @@ const teller = {
 }
 teller.first = 'Teller';
 teller.last = null;
-console.log(teller);
+console.log(teller); 
