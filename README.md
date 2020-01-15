@@ -17,8 +17,8 @@
 * [loops](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-loops)
 
 ## Arrays
-* [Array & object methods to know](https://syntax.fm/show/043/20-javascript-array-and-object-methods-to-make-you-a-better-developer)
-* [Array methods you should know](https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3)
+* [20 Array & Object methods to know](https://syntax.fm/show/043/20-javascript-array-and-object-methods-to-make-you-a-better-developer)
+* [10 JavaScript array methods to know](https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3)
 
 ## Functions
 * [Function Declarations & Expressions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
