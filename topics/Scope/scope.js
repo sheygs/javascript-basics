@@ -1,5 +1,6 @@
 /*
   - Scope of a variable roughly means "the availability of variables in a code"
+  - functions can also be scoped to their parent functions
   - Global variables (with the exception of "let" & "const") are attached to the window object
   - Scoping types are: global, function/local, and blocked
 */
