@@ -67,14 +67,13 @@ console.table(people);
 //   console.groupEnd('Starting group');
 // }
 
-
 function doctorize(name) {
   // console.count(`Running Doctorize`);
   return `Dr. ${name}`;
 }
 
 function greet(name) {
-  doesntExist();
+  // doesntExist();
   return `Hello ${name}`;
 }
 
@@ -108,4 +107,3 @@ async function fetchDadJoke() {
   console.log(joke);
   return joke;
 }
-
