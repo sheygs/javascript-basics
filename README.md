@@ -33,7 +33,7 @@
 * [JavaScript Scoping](https://wesbos.com/javascript-scoping/)
 * [Scope](https://scotch.io/courses/10-need-to-know-javascript-concepts/scope)
 * [Understanding Scope in JavaScript](https://scotch.io/tutorials/understanding-scope-in-javascript)
-* [Function & Block scope differences](https://medium.com/@josephcardillo/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe)
+
 
 ## Hoisting
 * [Hoisting](https://scotch.io/courses/10-need-to-know-javascript-concepts/hoisting)
