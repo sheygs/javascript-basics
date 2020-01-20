@@ -41,7 +41,7 @@
 * [Understanding Hoisting](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
 
 ## Closures
-* [Understanding JavaScript Closure](https://programmingwithmosh.com/javascript/understanding-javascript-closure/)
+* [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * [Beginners guide to Closure](https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda)
 * [Closures](https://scotch.io/courses/10-need-to-know-javascript-concepts/closures)
 
