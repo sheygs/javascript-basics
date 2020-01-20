@@ -44,4 +44,5 @@
 * [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * [Beginners guide to Closure](https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda)
 * [Closures](https://scotch.io/courses/10-need-to-know-javascript-concepts/closures)
+* [What is a Closure ?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)
 
