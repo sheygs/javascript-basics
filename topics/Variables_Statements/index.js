@@ -24,6 +24,8 @@
     - Can't be redeclared inside of its scope i.e. can only be declared
     inside of its scope once.
     - Can't be updated
+    - The properties of 'const' variables can change when assigned to an object
+      It just can't be reassigned entirely
     - blocked scoped {}
     -----------------------------------------------------------------
 
@@ -82,5 +84,5 @@ const gender = 'Male';
 // N/B: All undeclared variables are global variables in non-strict mode
 // In strict mode, returns undefined
 
-//isMarried = false;  
-//console.log(isMarried); 
+// isMarried = false;  
+// console.log(isMarried); 

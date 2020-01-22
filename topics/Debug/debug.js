@@ -9,7 +9,7 @@
      - .count() - Logs the number of times that this particular call to count() has been called,
                 - count based on the argument passed to count(),
      - .group()/groupEnd(),
-
+  
    - Callstack/Stack Trace
      - A call stack is a mechanism for an interpreter to keep track of its 
      place in a script that calls multiple functions — what function is 

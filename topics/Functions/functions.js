@@ -10,7 +10,7 @@
 /* 
 ----------------WAYS TO DEFINE A FUNCTION-------------------------------------
 - Three primary ways:
-  (i) Function Declaration
+  (i) Function Declaration/Regular function
   (ii) Function Expression
   (iii) Arrow Functions
 */
