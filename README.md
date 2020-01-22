@@ -47,3 +47,6 @@
 * [Closures](https://scotch.io/courses/10-need-to-know-javascript-concepts/closures)
 
 
+## DOM
+* [DOM Manipulation](https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation)
+* [Bubbling & Capturing](https://javascript.info/bubbling-and-capturing)
