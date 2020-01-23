@@ -7,7 +7,7 @@
 */
 
 /* QuerySelector */
-console.log(document.querySelector('.items'));
+//console.log(document.querySelector('.items'));
 
 // get things from the element
 console.log(document.querySelector('.items').id);
@@ -30,9 +30,15 @@ document.querySelector('.items p:nth-child(2)').innerText = 'Second paragraph ch
 document.querySelector('.sub-items').innerHTML =  `<a href="https://sheygs.github.io" target="_blank">My website</a>`;
 
 
-
-
-
+/* QuerySelectorAll */
+const mainDiv = document.querySelector('#main-div');
+const paragraphs = mainDiv.querySelectorAll('p'); // nodeList
+// convert to array
+let paragraphsArray = Array.from(paragraphs);
+paragraphsArray.forEach((el, index) => {
+  el.innerText = `Paragraph ${index} has been changed!`;
+})
+paragraphsArray.reverse();
 
 
 // use the below for script placed in the head tag
