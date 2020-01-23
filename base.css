@@ -114,3 +114,9 @@ h6 {
   color: var(--black);
   text-shadow: none;
 }
+
+img {
+  display: block;
+  margin-left: 50px;
+  width: 200px;
+}
