@@ -125,6 +125,6 @@ img {
 
 .round {
   border-radius: 50%;
-  transform:rotate(1turn) scale(1.5);
+  transform:rotate(1turn) scale(0.8);
   box-shadow:0 0 10px black;
 }
