@@ -25,7 +25,7 @@ document.querySelector('p:nth-child(odd)').style.fontSize = '25px';
 
 // change content
 document.querySelector('.items > p').textContent = 'First paragraph changed';
-document.querySelector('.items p:nth-child(3)').innerText = 'Third paragraph changed';
+document.querySelector('.items p:nth-child(4)').innerText = 'Third paragraph changed';
 document.querySelector('.sub-items').innerHTML =  `<a href="https://sheygs.github.io" target="_blank">My website</a>`;
 
 
@@ -63,3 +63,26 @@ function toggle(){
 }
 
 pic.addEventListener('click', toggle);
+
+
+/* Built-in & Custom Data Attributes */
+pic.alt = 'a random pic'; // setter
+console.log(pic.alt); // getter
+// returns 0 because we have to wait for the picture to be downloaded to know the size
+// solution:- add 'load' event listener to the pic or the window to load all resources before the 
+// naturalWidth calculation
+console.log(pic.naturalWidth); 
+
+pic.addEventListener('load', function (){ console.log(this,pic.naturalWidth) });
+
+pic.setAttribute('alt', 'some random pic'); // setter
+console.log(pic.getAttribute('alt')); // getter
+console.log(pic.hasAttribute('alt')); // true
+
+// Custom Data Attributes
+const custom = document.querySelector('.custom');
+console.log(custom.dataset); // returns an object containing all the data
+
+custom.addEventListener('click', function(){
+  alert(`Welcome ${custom.dataset.name} ${custom.dataset.last}`);
+})
