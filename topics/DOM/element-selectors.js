@@ -73,7 +73,7 @@ console.log(pic.alt); // getter
 // naturalWidth calculation
 console.log(pic.naturalWidth); 
 
-pic.addEventListener('load', function (){ console.log(this,pic.naturalWidth) });
+pic.addEventListener('load', function (){ console.log(pic.naturalWidth) });
 
 pic.setAttribute('alt', 'some random pic'); // setter
 console.log(pic.getAttribute('alt')); // getter
