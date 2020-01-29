@@ -50,18 +50,14 @@ const div = document.createElement('div');
 div.classList.add('wrapper');
 document.body.appendChild(div);
 
-const ul = document.createElement('ul');
-const liOne = document.createElement('li');
-liOne.textContent = 'One';
-const liTwo = document.createElement('li');
-liTwo.textContent = 'Two';
-const liThree = document.createElement('li');
-liThree.textContent = 'Three';
-ul.appendChild(liOne);
-ul.appendChild(liTwo);
-ul.appendChild(liThree);
-div.appendChild(ul);
-
+const ul = `
+  <ul>
+     <li>One</li>
+     <li>Two</li>
+     <li>Three</li>
+  </ul>
+`;
+div.innerHTML = ul;
 
 const img = document.createElement('img');
 img.setAttribute('src','https://picsum.photos/250');
