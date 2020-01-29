@@ -71,7 +71,7 @@
 
 
 ## Prototype + `this`
-* [this keyword](https://scotch.io/courses/10-need-to-know-javascript-concepts/the-this-keyword)
+* [`this` keyword](https://scotch.io/courses/10-need-to-know-javascript-concepts/the-this-keyword)
 * [Beginners guide to JavaScript prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
 * [bind,call & apply](https://www.taniarascia.com/this-bind-call-apply-javascript/)
 * [Everything you need to know about the `this` variable](http://wellpaidgeek.com/2017/09/21/everything-you-need-to-know-about-the-this-variable-in-javascript/)
