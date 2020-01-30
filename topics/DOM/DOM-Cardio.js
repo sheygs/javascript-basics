@@ -124,18 +124,5 @@ buttons.forEach(button => {
   button.addEventListener('click', deleteButton);
 })
 
-// const arr = [firstCard, secondCard, thirdCard, fourthCard];
-// arr.map(el => {
-//   const fragment = document.createRange().createContextualFragment(el);
-//   const domDiv = fragment.querySelector('.playerCard');
-//   newDiv.appendChild(domDiv);
-//   domDiv.style.margin = '20px';
-//   const button = document.createElement('button');
-//   button.innerHTML = `X Delete`;
-//   domDiv.appendChild(button);
-//   document.body.insertAdjacentElement('afterbegin', domDiv);
-//   [...document.querySelectorAll('button')].forEach(el => el.addEventListener('click', function(){
-//     el.parentElement.remove();
-//   }));
-// })
+
 
