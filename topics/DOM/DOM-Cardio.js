@@ -57,14 +57,16 @@ const ul = `
      <li>Three</li>
   </ul>
 `;
-div.innerHTML = ul;
+//  div.innerHTML = ul;
+// div.insertAdjacentHTML('afterbegin', ul);
+// option 3 - using the fragment method
 
 const img = document.createElement('img');
-img.setAttribute('src','https://picsum.photos/250');
+img.setAttribute('src','https://picsum.photos/500');
+img.width = 250;
 img.classList.add('cute');
 img.alt = 'Cute Puppy';
 div.appendChild(img);
-console.log(img);
 
 
 const htmlDiv = `
@@ -73,7 +75,11 @@ const htmlDiv = `
          <p>I am paragraph Two</p>
      </div>
     `;
-
+/*
+  Ways of inserting DOM strings
+  - converting using fragment then inserting using `insertAdjacentElement`
+  - inserting using `insertAdjacentHTML`;
+*/
 const htmlDivFragment = document.createRange().createContextualFragment(htmlDiv);
 const domDiv = htmlDivFragment.querySelector('div');   
 div.insertAdjacentElement('afterbegin', domDiv);
@@ -86,7 +92,10 @@ function generatePlayerCard(name, age, height){
   const html = `
      <div class="playerCard">
         <h2>${name} - ${age}</h2>
-        <p>They are ${height} and ${age} years old. In Dog years this person would be AGEINDOGYEARS. That would be a tall dog!</p>
+        <p>Their Height is ${height} and ${age} years old. In Dog years this person would be ${age * 7}. That would be a tall dog!
+        <button class="delete">&times; Delete</button>
+        </p>
+       <!--<button class="delete">&times; Delete</button>-->
     </div>
   `;
   return html;
@@ -99,16 +108,34 @@ const secondCard = generatePlayerCard('Sheygs',25, 176);
 const thirdCard = generatePlayerCard('Seun',26, 175);
 const fourthCard = generatePlayerCard('Mayowa',21, 175);
 
-const arr = [firstCard, secondCard, thirdCard, fourthCard];
-arr.map(el => {
-  const fragment = document.createRange().createContextualFragment(el);
-  const domDiv = fragment.querySelector('.playerCard');
-  domDiv.style.margin = '20px';
-  const button = document.createElement('button');
-  button.innerHTML = `X`;
-  domDiv.appendChild(button);
-  document.body.insertAdjacentElement('afterbegin', domDiv);
-  [...document.querySelectorAll('button')].forEach(el => el.addEventListener('click', function(){
-    el.parentElement.remove();
-  }));
+
+const htmlSum = firstCard + secondCard + thirdCard + fourthCard;
+newDiv.insertAdjacentHTML('afterbegin', htmlSum);
+div.insertAdjacentElement('beforebegin',newDiv);
+
+function deleteButton(e){
+  const target = e.currentTarget;
+  // target.parentElement.remove();
+  target.closest('.playerCard').remove(); // more effective
+}
+
+const buttons = document.querySelectorAll('.delete');
+buttons.forEach(button => {
+  button.addEventListener('click', deleteButton);
 })
+
+// const arr = [firstCard, secondCard, thirdCard, fourthCard];
+// arr.map(el => {
+//   const fragment = document.createRange().createContextualFragment(el);
+//   const domDiv = fragment.querySelector('.playerCard');
+//   newDiv.appendChild(domDiv);
+//   domDiv.style.margin = '20px';
+//   const button = document.createElement('button');
+//   button.innerHTML = `X Delete`;
+//   domDiv.appendChild(button);
+//   document.body.insertAdjacentElement('afterbegin', domDiv);
+//   [...document.querySelectorAll('button')].forEach(el => el.addEventListener('click', function(){
+//     el.parentElement.remove();
+//   }));
+// })
+
