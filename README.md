@@ -66,6 +66,7 @@
 
 
 ## Objects
+* [How to explain OOP concepts to a 6 year old](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
 * [JavaScript object: Basics to Advanced](https://biplab.hashnode.dev/javascript-object-basic-to-advance-ck47dawe5025nu3s1c6ia06qt)
 * [Objects & Classes](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/objects-classes/ch3.md)
 * [How to use object methods](https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript)

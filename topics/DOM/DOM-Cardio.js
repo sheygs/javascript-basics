@@ -93,9 +93,9 @@ function generatePlayerCard(name, age, height){
      <div class="playerCard">
         <h2>${name} - ${age}</h2>
         <p>Their Height is ${height} and ${age} years old. In Dog years this person would be ${age * 7}. That would be a tall dog!
-        <button class="delete">&times; Delete</button>
+        <!--<button class="delete">&times; Delete</button>-->
         </p>
-       <!--<button class="delete">&times; Delete</button>-->
+       <button class="delete">&times; Delete</button>
     </div>
   `;
   return html;
@@ -116,7 +116,7 @@ div.insertAdjacentElement('beforebegin',newDiv);
 function deleteButton(e){
   const target = e.currentTarget;
   // target.parentElement.remove();
-  target.closest('.playerCard').remove(); // more effective
+  target.closest('.playerCard').remove(); // more flexible
 }
 
 const buttons = document.querySelectorAll('.delete');
