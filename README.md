@@ -58,10 +58,11 @@
 ## DOM
 * [DOM Manipulation](https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation)
 * [Bubbling & Capturing](https://javascript.info/bubbling-and-capturing)
+* [Event Bubbling](https://www.sitepoint.com/event-bubbling-javascript/)
 
 
-## Events
-* [Events in details](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+## Events Loops
+* [Events Loops](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 
 ## Objects
