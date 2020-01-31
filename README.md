@@ -27,6 +27,7 @@
 ## Arrays
 * [20 Array & Object methods to know](https://syntax.fm/show/043/20-javascript-array-and-object-methods-to-make-you-a-better-developer)
 * [10 JavaScript array methods to know](https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3)
+* [How to simplify your codebase with `map ()`, `filter()` & `reduce()`](https://www.freecodecamp.org/news/15-useful-javascript-examples-of-map-reduce-and-filter-74cbbb5e0a1f/)
 
 ## Functions
 * [Function Declarations & Expressions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
