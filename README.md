@@ -14,7 +14,7 @@
 * [Closure](#closure)
 * [Loops](#loops)
 * [Objects](#objects)
-* [Prototype and `this`](#prototype-this)
+* [Prototype and this](#prototype-this)
 * [Async Programming](#async-programming)
 * [DOM Manipulation](#dom-manipulation)
 * [Events](#events)
@@ -82,7 +82,7 @@
 * [Objects & Classes](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/objects-classes/ch3.md)
 * [How to use object methods](https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript)
 
-## Prototype and `this`
+## Prototype and this
 * [`this` keyword](https://scotch.io/courses/10-need-to-know-javascript-concepts/the-this-keyword)
 * [Simple rules to `this` in JavaScript](https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3)
 * [Beginners guide to JavaScript prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
