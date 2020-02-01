@@ -1,28 +1,45 @@
 # Javascript Basics
 > A complete guide to JavaScript fundamentals
 
+## Table of Contents
+
+* [Variables](#variables)
+* [Operators](#operators)
+* [Data Types](#data-types)
+* [Boolean Logic](#boolean-logic)
+* [Arrays](#arrays)
+* [Functions](#functions)
+* [Scope](#scope)
+* [Hoisting](#hoisting)
+* [Closure](#closure)
+* [Loops](#loops)
+* [Objects](#objects)
+* [Prototype + `this`](#prototype-this)
+* [Async Programming](#async-programming)
+* [DOM Manipulation](#dom-manipulation)
+* [Events](#events)
+* [Event Loop](#event-loop)
+* [ES6](#es6)
+* [HTTP/HTTPS](#http-https)
+* [Recursion](#recursion)
+* [Regex](#regex)
+* [Others](#others)
+
+
 ## Variables
 * [let vs const](https://wesbos.com/let-vs-const/)
 * [Is var dead](https://wesbos.com/is-var-dead/)
 * [es6 const](https://mathiasbynens.be/notes/es6-const)
 * [var, let & const](https://scotch.io/courses/10-need-to-know-javascript-concepts/declaring-javascript-variables-var-let-and-const)
 
-
 ## Operators
 * [Unary operators](https://scotch.io/tutorials/javascript-unary-operators-simple-and-useful)
-
 
 ## Data Types
 * [Javascript Data Types](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
 
-
 ## Boolean Logic
 * [Search for resource](https://google.com)
-
-
-## Loops
-* [loops](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-loops)
-
 
 ## Arrays
 * [20 Array & Object methods to know](https://syntax.fm/show/043/20-javascript-array-and-object-methods-to-make-you-a-better-developer)
@@ -42,12 +59,13 @@
 * [JavaScript Scoping](https://wesbos.com/javascript-scoping/)
 * [Scope](https://scotch.io/courses/10-need-to-know-javascript-concepts/scope)
 * [Understanding Scope in JavaScript](https://scotch.io/tutorials/understanding-scope-in-javascript)
-
+* [Understand Scope & Scope  Chain in JavaScript](https://blog.bitsrc.io/understanding-scope-and-scope-chain-in-javascript-f6637978cf53)
 
 ## Hoisting
 * [Hoisting](https://scotch.io/courses/10-need-to-know-javascript-concepts/hoisting)
 * [What is hoisting](https://codeburst.io/javascript-what-is-hoisting-dfa84512dd28)
 * [Understanding Hoisting](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
+* [Scope & Hoisting in JavaScript](https://www.geeksforgeeks.org/scoping-hoisting-javascript/)
 
 ## Closures
 * [Beginners guide to Closure](https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda)
@@ -55,16 +73,8 @@
 * [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * [Closures](https://scotch.io/courses/10-need-to-know-javascript-concepts/closures)
 
-
-## DOM
-* [DOM Manipulation](https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation)
-* [Bubbling & Capturing](https://javascript.info/bubbling-and-capturing)
-* [Event Bubbling](https://www.sitepoint.com/event-bubbling-javascript/)
-
-
-## Events Loops
-* [Events Loops](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
-
+## Loops
+* [loops](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-loops)
 
 ## Objects
 * [How to explain OOP concepts to a 6 year old](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
@@ -72,38 +82,47 @@
 * [Objects & Classes](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/objects-classes/ch3.md)
 * [How to use object methods](https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript)
 
-
 ## Prototype + `this`
 * [`this` keyword](https://scotch.io/courses/10-need-to-know-javascript-concepts/the-this-keyword)
+* [Simple rules to `this` in JavaScript](https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3)
 * [Beginners guide to JavaScript prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
 * [bind,call & apply](https://www.taniarascia.com/this-bind-call-apply-javascript/)
 * [Everything you need to know about the `this` variable](http://wellpaidgeek.com/2017/09/21/everything-you-need-to-know-about-the-this-variable-in-javascript/)
  
+## Async Programming
+* [Callback functions](https://guide.freecodecamp.org/javascript/callback-functions/)
+* [Callbacks, Promises & async-await by Tyler Mcginnis](https://tylermcginnis.com/async-javascript-from-callbacks-to-promises-to-async-await/)
+* [Callbacks, Promises & async by Scotch.io](https://scotch.io/courses/10-need-to-know-javascript-concepts/callbacks-promises-and-async)
 
+## DOM Manipulation
+* [DOM Manipulation](https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation)
+* [Bubbling & Capturing](https://javascript.info/bubbling-and-capturing)
+
+## Events
+* [Event Bubbling](https://www.sitepoint.com/event-bubbling-javascript/)
+* [DOM Event types](https://developer.mozilla.org/en-US/docs/Web/Events)
+* [PreventDefault & Event types](https://alligator.io/js/preventdefault/)
+
+## Event Loop
+* [Events Loops](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 ## ES6
 * [Destructuring assignment & default values](https://zaiste.net/javascript_destructuring_assignment_default_values/)
 * [Default parameters](https://dev.to/sarah_chima/default-parameters-in-es6-blc)
 
-
-
- ## Async Programming
-* [Callback functions](https://guide.freecodecamp.org/javascript/callback-functions/)
-* [Callbacks, Promises & async-await by Tyler Mcginnis](https://tylermcginnis.com/async-javascript-from-callbacks-to-promises-to-async-await/)
-* [Callbacks, Promises & async by Scotch.io](https://scotch.io/courses/10-need-to-know-javascript-concepts/callbacks-promises-and-async)
-
-
-
 ## HTTP/HTTPS
 * [HTTP](https://whatis.techtarget.com/definition/HTTP-Hypertext-Transfer-Protocol)
 
-
-
 ## Recursion
+* [Big O Notation](https://alligator.io/js/big-o-notation/)
 * [Recursion is not hard](https://www.freecodecamp.org/news/recursion-is-not-hard-858a48830d83/)
+* [Understanding Recursion](https://alligator.io/js/understanding-recursion/)
 
-
-## Regular Expression
+## Regex
 * [Introduction to regex for web developers](https://dev.to/chrisachard/intro-to-regex-for-web-developers-2fj4)
 * [Regex 101](https://regex101.com/)
 * [Regexr](https://regexr.com/)
+
+## Others
+* [Alligator JS](https://alligator.io/js)
+* [Alligator CSS](https://alligator.io/css/)
