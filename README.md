@@ -14,13 +14,13 @@
 * [Closure](#closure)
 * [Loops](#loops)
 * [Objects](#objects)
-* [Prototype + `this`](#prototype-this)
+* [Prototype and `this`](#prototype-this)
 * [Async Programming](#async-programming)
 * [DOM Manipulation](#dom-manipulation)
 * [Events](#events)
 * [Event Loop](#event-loop)
 * [ES6](#es6)
-* [HTTP/HTTPS](#http-https)
+* [HTTP(S)](#https)
 * [Recursion](#recursion)
 * [Regex](#regex)
 * [Others](#others)
@@ -82,7 +82,7 @@
 * [Objects & Classes](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/objects-classes/ch3.md)
 * [How to use object methods](https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript)
 
-## Prototype + `this`
+## Prototype and `this`
 * [`this` keyword](https://scotch.io/courses/10-need-to-know-javascript-concepts/the-this-keyword)
 * [Simple rules to `this` in JavaScript](https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3)
 * [Beginners guide to JavaScript prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
@@ -110,7 +110,7 @@
 * [Destructuring assignment & default values](https://zaiste.net/javascript_destructuring_assignment_default_values/)
 * [Default parameters](https://dev.to/sarah_chima/default-parameters-in-es6-blc)
 
-## HTTP/HTTPS
+## HTTP(S)
 * [HTTP](https://whatis.techtarget.com/definition/HTTP-Hypertext-Transfer-Protocol)
 
 ## Recursion
