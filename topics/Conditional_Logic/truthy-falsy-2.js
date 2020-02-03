@@ -1,9 +1,12 @@
 /* eslint-disable */
 /*
-Falsy values: 0, "" (empty string), false, undefined, null, NaN
-Truthy Values: All non-falsy values
+- Falsy values: 0, "" (empty string), false, undefined, null, NaN
+- Truthy Values: All non-falsy values
+- == & != non-strict equality (checks for value equality)
+- === & !== strict equality   (checks for value & type equality)
 */
 
+// Logical Operators
 console.log(!!0); // false
 console.log(!!""); // false
 console.log(!!undefined); // false
@@ -19,7 +22,21 @@ console.log(!!new Date()); // true
 console.log(!!-4); // true
 console.log(!!Boolean(true)); // true
 
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+console.log(true || true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(true && true); // true
+
+// Comparison (Relational) Operators
 console.log(1 == '1'); // true
 console.log(1 === '1'); // false
 console.log(1 != '1'); // false
 console.log(1 !== '1'); // true
+
+console.log(1 >= '3'); // false
+console.log(1 <= '1'); // true
+console.log(2 > '1'); // true
+console.log(2 < '3'); // true
