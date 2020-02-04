@@ -80,7 +80,7 @@ const includesSeg = 'Olusegun'.includes(name)
 if (includesSeg){
   console.log('Super Cool Name');
 }
-
+ // function returns
 function itIncludesSeg(name){
   return 'Olusegun'.includes(name);
 }
