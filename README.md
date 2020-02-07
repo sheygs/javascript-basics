@@ -103,6 +103,9 @@
 * [DOM Event types](https://developer.mozilla.org/en-US/docs/Web/Events)
 * [PreventDefault & Event types](https://alligator.io/js/preventdefault/)
 
+## Type Coercion
+* [Type Coercion](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
+
 ## Event Loop
 * [Events Loops](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
