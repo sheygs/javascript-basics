@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../base.css">
+  <title>Intervals & Timers</title>
+</head>
+
+<body>
+  <script>
+    /* eslint-disable */
+    // function log() {
+    //   console.log('😁');
+    // }
+    // console.log('Start');
+    // setTimeout(log, 5000);
+    // console.log('Finish');
+
+    // setInterval(log, 2000);
+
+    // function setImmediateInterval(func, ms) {
+    //   // call the function right away
+    //   func();
+    //   // run a regular interval
+    //   return setInterval(func, ms);
+    // }
+    // setImmediateInterval(log, 5000);
+
+    // function sayHi() {
+    //   console.log('Hi');
+    // }
+    // setImmediateInterval(sayHi, 2000);
+
+    /*
+       To clear timers & intervals, you must save a reference
+       to that timer or interval in a variable
+    */
+    // function destroy() {
+    //   document.body.innerHTML = `<p>Destroyed 💣!!</p>`;
+    // }
+    // const bombTimer = setTimeout(destroy, 10000);
+    // console.log(bombTimer);
+
+    // if someone does not click in 5seconds, run it
+    // else clear it
+
+    // window.addEventListener('click', function () {
+    //   console.log('You just saved the world 💪');
+    //   clearTimeout(bombTimer);
+    // })
+
+    const $interval = setInterval(function () {
+      console.log('😂');
+      console.log('Hehe');
+    }, 100);
+
+    setTimeout(function () {
+      clearInterval($interval)
+    }, 3000);
+  </script>
+
+  <h2>Intervals & Timers</h2>
+  <!--
+     setTimeout() triggers the expression only once
+     while setInterval() keeps triggering the expression regularly
+     after the given interval of time
+   -->
+
+</body>
+
+</html>
