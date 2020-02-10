@@ -77,17 +77,20 @@
 * [loops](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-loops)
 
 ## Objects
-* [How to explain OOP concepts to a 6 year old](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
-* [JavaScript object: Basics to Advanced](https://biplab.hashnode.dev/javascript-object-basic-to-advance-ck47dawe5025nu3s1c6ia06qt)
 * [Objects & Classes](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/objects-classes/ch3.md)
+* [Dot Notation vs Bracket Notation](https://codeburst.io/javascript-quickie-dot-notation-vs-bracket-notation-333641c0f781)
+* [Value vs Reference](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)
+* [Deep Cloning an Object](https://www.codementor.io/@ramnmiklus/deep-copying-an-object-in-javascript-mdlj2c318)
 * [How to use object methods](https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript)
+* [JavaScript object: Basics to Advanced](https://biplab.hashnode.dev/javascript-object-basic-to-advance-ck47dawe5025nu3s1c6ia06qt)
+* [How to explain OOP concepts to a 6 year old](https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/)
 
 ## Prototype and this
 * [`this` keyword](https://scotch.io/courses/10-need-to-know-javascript-concepts/the-this-keyword)
 * [Simple rules to `this` in JavaScript](https://codeburst.io/the-simple-rules-to-this-in-javascript-35d97f31bde3)
 * [Beginners guide to JavaScript prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
-* [bind,call & apply](https://www.taniarascia.com/this-bind-call-apply-javascript/)
 * [Everything you need to know about the `this` variable](http://wellpaidgeek.com/2017/09/21/everything-you-need-to-know-about-the-this-variable-in-javascript/)
+* [bind,call & apply](https://www.taniarascia.com/this-bind-call-apply-javascript/)
  
 ## Async Programming
 * [Callback functions](https://guide.freecodecamp.org/javascript/callback-functions/)
@@ -113,7 +116,7 @@
 * [Destructuring assignment & default values](https://zaiste.net/javascript_destructuring_assignment_default_values/)
 * [Default parameters](https://dev.to/sarah_chima/default-parameters-in-es6-blc)
 
-## HTTP(S)
+## HTTP
 * [HTTP](https://whatis.techtarget.com/definition/HTTP-Hypertext-Transfer-Protocol)
 
 ## Recursion
