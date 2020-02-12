@@ -125,16 +125,19 @@ Other ways of defining a function are:
   const olusegun = {
       name: 'Olusegun',
       // method 1
+      // "this" refers to the object (olusegun)
       sayHi: function(){ 
-         console.log(this, 'Hey Sheygs!'); // this refers to the object
+         console.log(this, 'Hey Sheygs!');
       },
       // method 2
+      // "this" refers to the object (olusegun)
       bio(){
-         console.log(this,'I am Olusegun'); // this refers to the object
+         console.log(this,'I am Olusegun'); 
       },
-      // Arrow functions
+      // method 3 - Arrow functions
+      // "this" refers to the window object
       whisper: () => {
-         console.log(this, 'Whispering...'); // refers to the window object
+         console.log(this, 'Whispering...'); 
       }
  };
 
@@ -146,11 +149,12 @@ Other ways of defining a function are:
 - A function that accepts a function as an argument is a "higher-order function"
 
 ```js
-   // click callbacks
+   /* Click callbacks */
+   <button class="click-me">click me</button>
    const button = document.querySelector('.click-me');
 
   /* method 1 */
-  // "this" refers to the window object
+  // "this" refers to the Window object
   button.addEventListener('click', olusegun.whisper);
 
   /* method 2 */
@@ -166,7 +170,7 @@ Other ways of defining a function are:
     console.log(this, 'Nice!');
   });
 
-  // Timer callbacks
+  /* Timer callbacks */
   // "this" refers to the Window object
   setTimeout(function() {
     console.log(this);
