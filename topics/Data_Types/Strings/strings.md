@@ -1,21 +1,24 @@
 ## Strings
 
-They are used to hold texts. The three(3) ways to create a string are using double quotes `""`, single quotes `''`, and using back ticks ``.
+They are used to hold texts. The three(3) ways to create a string are using double quotes `""`, single quotes `''`, and using back ticks __``__.
 
 Backticks are more conveniently used for multi-line strings, string interpolation and concatenation. Concatenation is the joining of two or more strings while string interpolation is inserting a variable inside a string.
+
+```js
+ // using escape literals
+ const words = 'She\'s in love with JavaScript';
+ const sentence = "JavaScript is so \"tricky\"";
+```
 
 ```js
 // backticks
 const greetings = 'Welcome to the JavaScript basics';
 const name = 'Sam';
-const html = 
-             ```
-            `
-              <div>
-                <h2>Hi ${name}, ${greetings}!</h2>
-             </div>
+const html =   `
+                <div>
+                   <h2>Hi ${name}, ${greetings}!</h2>
+               </div>
             `;
-             ```
 document.body.innerHTML = html;
 ```
 ```js
@@ -40,6 +43,5 @@ console.log(definition); // Science is the study of living & non-living things.
 ```
 
 ## String Properties & Indexes
-- length
-- zero-based index system
+- length ( zero-based index )
 - To get the index of a character from a string, use the `s.charAt()` or `s[i]` where i is the index number.
