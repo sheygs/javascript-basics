@@ -20,7 +20,7 @@
 * [Events](#events)
 * [Event Loop](#event-loop)
 * [ES6](#es6)
-* [HTTP(S)](#https)
+* [HTTP](#https)
 * [Recursion](#recursion)
 * [Regex](#regex)
 * [Others](#others)

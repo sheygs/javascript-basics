@@ -11,21 +11,21 @@
 
 * Three (3) ways to declare a _variable_ are __var__, __let__ and __const__.
 
-* __var__
+##  __var__
  
  * Can be declared
  * Can be redeclared inside a scope i.e. can be declared inside of its scope more than once.
  * Can be reassigned/updated
  * Is __function scoped__; only available inside the parent function.
 
-* __let__
+##  __let__
 
  * Can be declared
  * Can't be redeclared inside of its scope i.e. can only be declared inside of its scope once.
  * Can be updated
  * Is __blocked scoped__ `{}`
 
-* __const__
+##  __const__
  
  * Can't be declared (must be initialised/assigned a value).
  * Can't be redeclared inside of its scope.
