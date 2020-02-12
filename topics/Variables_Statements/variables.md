@@ -1,15 +1,15 @@
 ## Variables & Statements
 
-* A _variable_ is a container for storing a value. The contained value can change, and the variable may hold different types of data. _variable_ declaration statements end in a semi-colon `;`
+A _variable_ is a container for storing a value. The contained value can change, and the variable may hold different types of data. _variable_ declaration statements end in a semi-colon `;`
 
-* The following is a sequence in which variable declaration & initialisation occurs.
+The following is a sequence in which variable declaration & initialisation occurs.
 
   ```
      Declaration -> Initialisation/Assignment -> Usage
   ```
 
 
-* Three (3) ways to declare a _variable_ are __var__, __let__ and __const__.
+Three (3) ways to declare a _variable_ are __var__, __let__ and __const__.
 
 ##  __var__
  
@@ -34,7 +34,9 @@
  * The properties of `const` variables can change when assigned to an object/array.
 
 
-* The purpose of `use strict` is to indicate that the code should be executed in "strict mode". With "strict mode", you cannot use undeclared variables.
+* The purpose of `use strict` is to indicate that the code should be executed in "strict mode". With "strict mode", you cannot use undeclared variables. 
+
+__Note:__ All undeclared variables are global variables in non-strict mode. In strict mode, returns undefined.
 
 Useful Tips:
 
