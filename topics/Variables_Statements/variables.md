@@ -36,7 +36,7 @@ Three (3) ways to declare a _variable_ are __var__, __let__ and __const__.
 
 * The purpose of `use strict` is to indicate that the code should be executed in "strict mode". With "strict mode", you cannot use undeclared variables. 
 
-__Note:__ All undeclared variables are global variables in non-strict mode. In strict mode, returns undefined.
+__Note:__ All undeclared variables are `global` variables in non-strict mode. In strict mode, returns `undefined`.
 
 Useful Tips:
 
