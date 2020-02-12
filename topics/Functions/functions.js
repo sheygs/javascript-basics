@@ -36,6 +36,28 @@ console.log(doctorize3('Les'));  // Dr. Les
 // Improved arrow functions
  const makeABaby = (first, last) => ({ name: `${first} ${last}`, age: 0 });
 
+/* Callback Functions */
+
+ // click callbacks
+ const button = document.querySelector('.click-me');
+
+ /* method 1 */
+ // "this" refers to the window object
+ button.addEventListener('click', olusegun.whisper);
+
+ /* method 2 */
+ // "this" refers to the button
+ function handleClick() {
+   console.log(this);
+ }
+ button.addEventListener('click', handleClick);
+
+  // Timer callbacks
+  // "this" refers to the Window object
+  setTimeout(function() {
+    console.log(this);
+  }, 3000); 
+
 
 /* FUNCTIONS: PARAMETERS & ARGUMENTS */
 
