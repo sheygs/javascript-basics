@@ -124,18 +124,24 @@ Other ways of defining a function are:
 ```js
   const olusegun = {
       name: 'Olusegun',
+
       // method 1
       // "this" refers to the object (olusegun)
+      
       sayHi: function(){ 
          console.log(this, 'Hey Sheygs!');
       },
+
       // method 2
       // "this" refers to the object (olusegun)
+
       bio(){
          console.log(this,'I am Olusegun'); 
       },
+
       // method 3 - Arrow functions
       // "this" refers to the window object
+
       whisper: () => {
          console.log(this, 'Whispering...'); 
       }
