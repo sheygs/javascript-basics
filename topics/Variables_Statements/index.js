@@ -15,11 +15,7 @@ a = 100; // Assignment
 console.log(a); // usage
 
 const gender = 'Male';
-//gender = 'Female'; //error, can't reassign const variables
-
-
-// N/B: All undeclared variables are global variables in non-strict mode
-// In strict mode, returns undefined
+//gender = 'Female'; // error
 
 // isMarried = false;  
 // console.log(isMarried); 
