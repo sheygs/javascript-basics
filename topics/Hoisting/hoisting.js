@@ -1,13 +1,3 @@
-/*
-  - Hoisting is the default behavior of moving all declarations 
-  - at the top of the scope before execution.
-
-  - It allows us to access variables & functions before they have been created
-
-  - JavaScript ONLY hoist variables & functions declarations/regular functions, not initialisations
-
-*/
-
 // Function Declarations
 /* eslint-disable */
 sayHi();
