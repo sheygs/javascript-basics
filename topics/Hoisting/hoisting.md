@@ -175,10 +175,10 @@
   
     test(); 
 ``` 
-    ```
+    
       foo
       TypeError: bar is not a function
-    ```
+    
 ```js
     /* ex. 8 rewritten  */
 
