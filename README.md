@@ -70,7 +70,9 @@
 
 ## Closure
 * [Beginners guide to Closure](https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda)
-* [Closures - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+* [Closure in simple terms](https://dmitripavlutin.com/simple-explanation-of-javascript-closures/)
+* [Closures in JavaScript for Beginners](https://www.codingame.com/playgrounds/6516/closures-in-javascript-for-beginners)
+* [Closures in 6 minutes](https://www.freecodecamp.org/news/learn-javascript-closures-in-n-minutes/)
 
 
 ## Loops
