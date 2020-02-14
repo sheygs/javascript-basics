@@ -1,27 +1,6 @@
-/*
- - Closure - Ability to access a parent level-scope from a child/inner
-   scope/function even after the parent function has been terminated
+/* eslint-disable  */
 
-  
- - Lexical/static scope
-   A lexical scope or static scope in JavaScript refers to the accessibility of the variables, functions,and objects based on their physical location in the source code. Nested functions have access to variables declared in their outer scope.
-
- - Lexical environment
-
-
- - Closure scope chain:
-   For every closure, we have 3 scopes:
-   - local scope(own scope)
-   - Outer Function scope
-   - Global scope
-
- - Use cases for closure:
-  - Data encapsulation
-  - Higher-Order functions
-  - Currying/partial application
-*/
-
-// Ex.1 Closures creating a function
+ /* Closures creating a function */
 function outerScope() {
   const outerVar = 'OuterScope';
   function innerScope() {
@@ -29,16 +8,13 @@ function outerScope() {
     console.log(innerVar);
     console.log(outerVar);
   }
-  return innerScope;
+  innerScope();
 }
 
-// const outer = outerScope();
-// outer();
+outerScope();
 
-// OR
-outerScope()();
 
-// Ex.2 Closures creating private variables
+ /* Data Privacy 1 */
 function createGreeting(greeting = '') {
   const greet = greeting.toUpperCase();
   return function(name = 'Ade') {
@@ -47,11 +23,11 @@ function createGreeting(greeting = '') {
 }
 
 const sayHi = createGreeting('Hi');
-sayHi(); // HI Ade
+sayHi();
+/* createGreeting('Hello')('Sheygs'); */
 
-createGreeting('Hello')('Sheygs'); // HELLO Sheygs
 
-// Ex.3 Data Privacy
+/* Data Privacy 2 */
 function createGame(gameName = '') {
   let score = 0;
   return function win() {
@@ -59,30 +35,12 @@ function createGame(gameName = '') {
     return `Your ${gameName} score is ${score}`;
   };
 }
-
-/* eslint-disable  */
 const baseball = createGame('Baseball');
 const soccer = createGame('Soccer');
 
 
-// EX:1 
-// global scope
-function makeAdder(x){
-  // outer function scope
-  return function(y){
-    // local scope
-    return x + y;
-  }
-}
-
-const add5 = makeAdder(5);
-const add7 = makeAdder(7);
-console.log(add5(2)); // 7
-console.log(add7(3)); // 10
-
-
-// Emulating private methods with closures
-// 1. Using Anonymous function
+/* Emulating private methods with closures */
+/* Using IIFEs */
 const count = (function(){
      let x = 0;
      return {
@@ -92,10 +50,10 @@ const count = (function(){
         reset: function(){ return x; }
      }
 })();
-count.increment(); // 1
-count.decrement(); // 0
+count.increment(); 
+count.decrement();
 
-// 2. Without Using Anonymous function
+/* Without Using IIFEs */
 const makeCounter = function(){
    let privateCounter = 0;
    function changeBy(val){
@@ -115,9 +73,9 @@ const makeCounter = function(){
 }
 
 const counter1 = makeCounter();
-console.log(counter1.increment()); // 1
-console.log(counter1.decrement()); // 0
-console.log(counter1.value()); // 0
+console.log(counter1.increment()); 
+console.log(counter1.decrement()); 
+console.log(counter1.value()); 
 
 
 
