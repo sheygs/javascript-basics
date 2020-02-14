@@ -16,19 +16,16 @@ To remove an eventListener
 
 `event.eventPhase` - the current phase (capturing = 1, target = 2, bubbling = 3)
 
-__capture:__
+__Capture:__ The event goes down to the element.
 
-__targets:__ 
+__Targets:__ `event.target` is the deepest element that originated the event
+`event.currentTarget` (= `this`) - the current element that handles the event (the one that has the handler on it). `this` - always refers to the parent element.
 
-`event.target` is the deepest element that originated the event
-`event.currentTarget` (= `this`) - the current element that handles the event (the one that has the handler on it)
-
-`this` - always refers to the parent element
 `event.target` could equal `this`. This happens when the click is made directly on the parent element 
 
-__bubbling:__ When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+__Bubbling:__ The event bubbles up from the element.
 
-__propagation:__ used to stop bubbling event from the target element straight up.
+__Propagation:__ used to stop bubbling event from the target element straight up.
 
 Event types include: `mousemove`, `mouseenter`, `mouseleave`, `click`, `keyup`, `keydown`, `focus`, `blur`...
 
@@ -49,7 +46,7 @@ Event types include: `mousemove`, `mouseenter`, `mouseleave`, `click`, `keyup`, 
 
  ## Accessibility Gotchas and Keyboard Codes
 
-Tips:
+__Tips:__
 Buttons are to be used for actions that happen inside of an application.
 Links are to be  used to navigate a page.
 Elements that are not keyboard accessible should not have clicks registered on them.
