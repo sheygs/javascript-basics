@@ -1,9 +1,4 @@
-/*
- - FLOW CONTROL
-   if, else if, & else statements
-  - Relational (Comparison) Operators : >= , <= , > , <, ==, ===, !=, !==
-  - Logical Operators: && , ||, !
-*/
+/* eslint-disable */
 
 // if-else (two-condition statement)
 const condition = true;
@@ -29,9 +24,9 @@ if (condition) {
   console.log(result);
 })();
 
-// Selects the first statement if all statements are true
+// runs the first `if` statement if it is true
 (() => {
-  /* eslint-disable no-constant-condition */
+
   if (10 > 2) {
     console.log('Ten is greater than Two');
   }
@@ -41,11 +36,11 @@ if (condition) {
   if (9 > 7) {
     console.log('Nine is greater than Seven');
   }
+  
 })();
 
 (() => {
-  /* eslint-disable no-constant-condition */
-  // N/B: Beware of the order of your if-else statements
+  // Beware of the order of your if-else statements
   const age = 55;
   if (age > 50) {
     console.log('In your fifties');
@@ -61,7 +56,6 @@ if (condition) {
 })();
 
 (function slugify(sentence, lowercase) {
-  /* eslint-disable */
   let slug = sentence.replace(/\s/g, '-');
   if (lowercase) {
     return slug.toLowerCase();
@@ -89,7 +83,8 @@ if (itIncludesSeg){
 }
 })();
 
-// truthy/falsy values
+
+/* truthy/falsy demo */
 (() => { 
 const values = [[], {}, -10, 1, 0, '', 'full string', ' ', undefined, NaN, null];
     console.group('truthy or falsy values');

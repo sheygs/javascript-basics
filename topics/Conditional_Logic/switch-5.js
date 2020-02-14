@@ -6,7 +6,7 @@ let x = 0,
     rotate = 0;
 const speed = 10;
 function handleKeyDown(event){
-  // if it's not an arrow key, ignore
+  // Not an arrow key ? ignore : utilise
  if (!event.key.includes('Arrow')) { return; }
   switch(event.key){
       case 'ArrowUp':

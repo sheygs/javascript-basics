@@ -1,12 +1,6 @@
 /* eslint-disable */
-/*
-- Falsy values: 0, "" (empty string), false, undefined, null, NaN
-- Truthy Values: All non-falsy values
-- == & != non-strict equality (checks for value equality)
-- === & !== strict equality   (checks for value & type equality)
-*/
 
-// Logical Operators
+/* Logical Operators */
 console.log(!!0); // false
 console.log(!!""); // false
 console.log(!!undefined); // false
@@ -30,7 +24,7 @@ console.log(true && false); // false
 console.log(false && true); // false
 console.log(true && true); // true
 
-// Comparison (Relational) Operators
+/* Comparison (Relational) Operators */
 console.log(1 == '1'); // true
 console.log(1 === '1'); // false
 console.log(1 != '1'); // false
