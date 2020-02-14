@@ -1,9 +1,4 @@
-// Accessibility Gotchas & Keyboard Codes
-
-// Tips:
-// Buttons are to be used for actions that happen inside of an application
-// Links are used to change the page
-// elts that are not keyboard accessible should not have clicks registered on them
+/* Accessibility Gotchas & Keyboard Codes */
 
 const photo = document.querySelector('.photo');
 function handleClick(e) {

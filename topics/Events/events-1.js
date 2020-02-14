@@ -11,10 +11,6 @@ const coolButton = document.querySelector('.cool');
 button.addEventListener('click', handleClick);
 coolButton.addEventListener('click', arrowFunc);
 
-//benefits of using a named function
-// Adheres to the DRY principle: prevents multiple updates of  anonymous functions 
-// if you need to remove eventListeners, use a named function
-
 // button.removeEventListener('click', handleClick);
 
 // listen on multiple items
@@ -27,10 +23,10 @@ function handleBuyButtonClick(button){
   button.addEventListener('click', buyItem)
 }
 
-// buyButtons.forEach(handleBuyButtonClick);
+buyButtons.forEach(handleBuyButtonClick);
 
-buyButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    console.log('Bought Already')
-  })
-})
+// buyButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     console.log('Bought Already')
+//   })
+// })
