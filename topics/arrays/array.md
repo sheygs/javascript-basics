@@ -15,6 +15,13 @@
 __Static__ methods are methods that do not require an instance of a class. They are referenced by the class name, and are usually utility methods e.g. `Array.of()`,  `Array.from()` and `Array.isArray()`.
 
 
+### Instance Methods
+
+__Instance__ methods are methods that live on an object instance.
+
+Examples of instance methods are: `push`, `pop`, `shift`, `unshift`, `split`, `join`, `slice`, `splice`, `indexOf`, `lastIndexOf`, `includes`, `reverse`
+
+
 
 
 
