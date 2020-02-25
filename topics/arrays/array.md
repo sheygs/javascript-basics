@@ -10,6 +10,13 @@
 - Take a _copy_ of the original data if you use mutable methods without wanting to modify the original data/array.
 - To create an array, use the bracket symbol `[]` of the `new Array ()` method.
 
+### Static Methods
+ 
+__Static__ methods are methods that do not require an instance of a class. They are referenced by the class name, and are usually utility methods e.g. `Array.of()`,  `Array.from()` and `Array.isArray()`.
+
+
+
+
 
 
 
