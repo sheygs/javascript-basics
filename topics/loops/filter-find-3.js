@@ -130,8 +130,14 @@ const isStudent = students.filter(findStudentByID('2958'));
 
 /* find student by properties */
 
+//  function findStudentByProps(prop, value){
+//    return function isStudent(student){
+//      return student[prop] === value;
+//    }
+//  }
+
 const findStudentByProps = (prop,value) => student => student[prop] === value;
 
 const student1 = students.filter(findStudentByProps('first_name','Brett'));
-const student2 = students.filter(findStudentByProps('id','978f'));
+const student2 = students.find(findStudentByProps('id','978f'));
 
