@@ -39,8 +39,14 @@ function getRandomPosition(num){
   return Math.floor(Math.random() * num);
 }
 
+let hue = 0;
+context.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 
 function draw({ key}){
+  context.beginPath(); // !important
+  hue+=5;
+  context.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+
   context.moveTo(x,y);
    switch(key){
      case 'ArrowUp':
