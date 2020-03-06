@@ -43,7 +43,7 @@ let hue = 0;
 context.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 
 function draw({ key}){
-  context.beginPath(); // !important
+  context.beginPath(); // !important so that they may be drawn with different colours
   hue+=5;
   context.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 
