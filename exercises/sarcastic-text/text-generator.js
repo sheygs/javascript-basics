@@ -72,70 +72,38 @@ const funkyLetters = {
   };
 
 
-function transformText(value){
-  // const filter = document.querySelector('[name=filter]:checked').value;
-  const filter = inputs.find(input => input.checked).value;
 
-  /* case I */
+function update(e){
+  
+  const filter = inputs.filter(input => input.checked)[0].value;
+  const textArray = textArea.value.split('');
+  let modified;
 
-  const letterArray = Array.from(value);
-  const modified = letterArray.map(filters[filter]);
-  console.log(modified);
-  result.textContent =  modified.join('');
- 
-  /* case II */
+  switch(filter){
+    case 'sarcastic':
+          modified = textArray.map((el,index) => {
+             return (index % 2) ? el.toUpperCase() : el.toLowerCase();
+          });
+          break;
 
-  // const lettersArray = Array.from(value);
-  // let modified;
+    case 'funky':
+          modified = textArray.map(letter => {
+            return funkyLetters[letter] ? funkyLetters[letter] 
+                   : funkyLetters[letter.toLowerCase()] ? 
+                     funkyLetters[letter.toLowerCase()]
+                   : letter;
+          });
+          break;
 
-  // switch(filter){
-  //   case 'sarcastic':
-  //         // take the text and loop over each letter
-  //        modified = lettersArray.map(filters.sarcastic);
-  //        break;
-  //   case 'funky':
-  //        modified = lettersArray.map(filters.funky);
-  //        break;
-  //   case 'unable':
-  //        modified = lettersArray.map(filters.unable);
-  //        break;
-  //   default:
-  //        break;
-      
-  // }
-  // result.textContent = modified.join('');
-}
-
-
-const filters = {
-
-  sarcastic(letter, index){
-    // if it is odd, returns 1 (truthy) -> letter to uppercase
-    // if it is even, returns 0 (falsy) -> letter to lowercase
-    return (index % 2) ? letter.toUpperCase() : letter.toLowerCase();
-  },
-
-  funky(letter){
-     // first check if there is a funky letter for this case
-     let funkyLetter = funkyLetters[letter];
-     if (funkyLetter) return funkyLetter; 
-
-     // if there is not, check if there is a lowercase version 
-     funkyLetter = funkyLetters[letter.toLowerCase()];
-     if (funkyLetter)  return funkyLetter; 
-
-    // if there is none, return the regular letter
-    return letter;
-  },
-
-  unable(letter){
-    const random = Math.floor(Math.random() * 3);
-    if (letter === ' ' && random === 1){
-      return '...';
-    }
-    return letter;
+    case 'unable':
+         modified = textArray.map(letter => {
+           const random = Math.floor(Math.random() * 4);
+           return (letter === ' ' && random === 3) ?  letter.replace(letter,'...') : letter;
+         });
+         break;
   }
+  result.textContent = modified.join(''); 
 }
 
-textArea.addEventListener('input', ({ target }) => transformText(target.value));
-inputs.forEach(input => input.addEventListener('input', () => transformText(textArea.value)));
+ textArea.addEventListener('input',e => update(e));
+ inputs.forEach(input => input.addEventListener('input', _ => update(textArea)));
