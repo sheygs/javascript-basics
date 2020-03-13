@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/base.css">
+ <title>Advanced Flow Control</title>
+ <style>
+  .go {
+   margin: 5rem;
+   padding: 5rem;
+   width: 25rem;
+   height: 25rem;
+   outline: none;
+   /* transitions to a circle after 0.2s */
+   transition: all 2s;
+  }
+
+  .go.circle {
+   border-radius: 50%;
+  }
+
+  .go.red {
+   background: red;
+  }
+
+  .go.purple {
+   background: purple;
+   color: white;
+  }
+
+  .go.fadeOut {
+   opacity: 0.1;
+  }
+ </style>
+</head>
+
+<body>
+ <h1>Advanced Flow Control</h1>
+ <button class="go">Click Me</button>
+ <script src="./advanced-flow-control/event-loop-callback-hell.js"></script>
+</body>
+
+</html>
