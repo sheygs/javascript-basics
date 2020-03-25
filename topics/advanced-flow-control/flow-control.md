@@ -1,8 +1,9 @@
 ## Async & Await
-promise chaining
-`promises.all` - only resolves when all promises have resolved; require a catch block if a promise is rejected
-`promise.race` - waits for the first settled promise and gets its result or error
-`promise.allSettled` - doesn't need a catch block;  waits for all promises to settle REGARDLESS of the whether they were rejected or resolved
+
+- promise chaining
+- `promises.all`: only resolves when all promises have resolved; require a catch block if a promise is rejected
+- `promise.race`: waits for the first settled promise and gets its result or error
+- `promise.allSettled`: doesn't need a catch block;  waits for all promises to settle REGARDLESS of the whether they were rejected or resolved
 
 > function declaration
 
