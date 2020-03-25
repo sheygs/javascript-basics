@@ -33,4 +33,4 @@ const person = {
 };
 ```
 
-- await - asynchronously waiting
+> await - asynchronously waiting
