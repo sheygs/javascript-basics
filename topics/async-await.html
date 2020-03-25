@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../base.css" />
+    <title>Async & Await</title>
+    <style>
+      .go {
+        margin: 5rem;
+        padding: 5rem;
+        width: 25rem;
+        color: black;
+        height: 25rem;
+        background: white;
+        outline: none;
+        /* transitions to a circle after 0.2s */
+        transition: all 2s;
+      }
+
+      .go.circle {
+        border-radius: 50%;
+      }
+
+      .go.red {
+        background: red;
+      }
+
+      .go.purple {
+        background: purple;
+        color: white;
+      }
+
+      .go.fadeOut {
+        opacity: 0;
+        transition: all 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Async & Await</h2>
+    <button class="go">Click Me</button>
+    <script src="./advanced-flow-control/async-await.js"></script>
+  </body>
+</html>
