@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../base.css" />
     <title>Promises</title>
+    <style>
+      .go {
+        margin: 5rem;
+        padding: 5rem;
+        width: 25rem;
+        color: black;
+        height: 25rem;
+        background: white;
+        outline: none;
+        /* transitions to a circle after 0.2s */
+        transition: all 2s;
+      }
+
+      .go.circle {
+        border-radius: 50%;
+      }
+
+      .go.red {
+        background: red;
+      }
+
+      .go.purple {
+        background: purple;
+        color: white;
+      }
+
+      .go.fadeOut {
+        opacity: 0.5;
+        transition: all 2s;
+      }
+    </style>
   </head>
   <body>
     <h2>Promises</h2>
+    <button class="go">Click Me</button>
     <!-- <script src="./advanced-flow-control/promises.js"></script> -->
-    <script src="./advanced-flow-control/promise-error-handling.js"></script>
+    <!-- <script src="./advanced-flow-control/promise-error-handling.js"></script> -->
+    <script src="./advanced-flow-control/callback-hell-refactor.js"></script>
   </body>
 </html>
