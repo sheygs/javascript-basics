@@ -3,7 +3,8 @@ const button = document.querySelector('.accept');
 
 
 function callback(payload){
- if (payload[0].intersectionRatio === 1){
+ const { intersectionRatio } = payload[0];
+ if (intersectionRatio === 1){
   button.disabled = false;
   observer.unobserve(terms.lastElementChild);
  }
