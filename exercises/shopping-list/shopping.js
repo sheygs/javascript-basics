@@ -3,6 +3,7 @@ const shoppingForm = document.querySelector('.shopping');
 const list = document.querySelector('.list');
 const items = []; // state of our app
 
+const event = new CustomEvent('updateItems');
 
 function handleSubmit(e){
  e.preventDefault();
@@ -18,7 +19,7 @@ function handleSubmit(e){
   items.push(item);
   console.log(`${items.length} items in the cart`);
  }
-  displayItems(); 
+  list.dispatchEvent(event);
   form.reset();
 }
 
@@ -29,7 +30,7 @@ function displayItems(){
       <li class="shopping-item">
         <input type="checkbox"> 
         <span> ${item.name}</span>
-        <button>&times;</button>
+        <button aria-label="Remove ${item.name}">&times;</button>
       </li>
     `
   }).join('');
@@ -37,4 +38,10 @@ function displayItems(){
 }
 
 
+function addToLocalStorage(){
+  localStorage.setItem('items', JSON.stringify(items));
+}
+
 shoppingForm.addEventListener('submit', e => handleSubmit(e));
+list.addEventListener('updateItems', displayItems);
+list.addEventListener('updateItems', addToLocalStorage);
