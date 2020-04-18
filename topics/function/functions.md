@@ -204,3 +204,42 @@ Other ways of defining a function are:
     const sum = (...args) => args.reduce((elt,next) => elt + next);
     sum(1,2,3,4); // 10
 ```
+
+
+## Arrow Functions
+
+
+Arrow functions give access to their `DEFINING` environment while regular functions give access to their `CALLING` environment.
+
+The value of the __this__ keyword inside a regular function depends on `HOW` the function was `CALLED`.
+
+The value of the __this__ keyword inside an arrow function depends on `WHERE` the function was `DEFINED`.
+   
+
+```js
+this.whoIsThis = 'TOP'; // Identify this scope
+
+// Defining
+const fancyObj {
+  whoIsThis: 'FANCY', // Identify this object
+
+  regularF: function () {
+    console.log('regularF', this.whoIsThis);
+  },
+
+  arrowF: () => {
+    console.log('arrowF', this.whoIsThis);
+  },
+};
+
+// Calling
+console.log('TOP-LEVEL', this.whoIsThis); // It's "TOP" here
+
+fancyObj.regularF(); // Output #1
+fancyObj.arrowF();   // Output #2
+
+fancyObj.regularF.call({whoIsThis: 'FAKE'}); // Output #3
+fancyObj.arrowF.call({whoIsThis: 'FAKE'});   // Output #4
+
+
+```
