@@ -59,7 +59,7 @@ function ask(options){
 
 
     // set a minute timeout before the form pop ups
-    await wait(50).then(() => console.log('Done...'));
+    await wait(50);
 
     // display popupForm
     popupForm.classList.add('open');
@@ -80,3 +80,25 @@ async function askQuestion(e){
 const buttons = document.querySelectorAll('[data-question]');
 buttons.forEach(button => button.addEventListener('click', askQuestion));
 
+const questions  = [
+  {title: 'What is your name?'},
+  {title: 'What is your age?', cancel: true},
+  {title: 'What is your dog\'s name ?'}
+]
+
+
+async function asyncMap(array, callback){
+   let list = [];
+   for (const item of array){
+      const result = await callback(item);
+      list = [...list, result];
+   }
+   return list;
+}
+
+async function onPageLoad(){
+  const answers = await asyncMap(questions, ask);
+  console.log(answers);
+}
+
+onPageLoad();
