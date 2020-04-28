@@ -41,7 +41,7 @@ Pizza.prototype.eat = function(){
 }
 
 Pizza.prototype.describe = function(){
-  return `This pizza is for ${this.customer} with toppings ${this.toppings.join(',')} and ${this.slice} slices left`;
+  return `This pizza is for ${this.customer} with toppings ${this.toppings.join(',')} and there are ${this.slice} slices left`;
 }
 
 const pepperoniPizza = new Pizza(['hamburger', 'pepperoni'], 'Olusegun');
