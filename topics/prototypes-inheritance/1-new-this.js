@@ -2,15 +2,15 @@
 
 // dates don't  have literal syntax
 const date = new Date();
+
 //console.log(date.getFullYear());
 
 const names = new Array('Olusegun', 'Ekoh');
 const sheygs = new Object({ first: 'Olusegun', last:'Ekoh' });
 const span = document.createElement('span');
 
-//console.dir(names);
-//console.log(sheygs)
-//console.log(span);
+// console.dir(names, sheygs, span);
+
 
 
 function Pizza(toppings = [], customer){
@@ -18,6 +18,30 @@ function Pizza(toppings = [], customer){
  this.toppings = toppings;
  this.customer = customer;
  this.id = Math.floor(Math.random()*16777215).toString(16);
+ this.slice = 10;
+//  this.eat = function(){
+//     if (this.slice > 0){ 
+//       return this.slice--;
+//     }
+//     else {
+//       console.info('No slices left!');
+//     }
+//     console.log(`Eaten ${this.slice} slice`);
+//  }
+}
+
+Pizza.prototype.eat = function(){
+    if (this.slice > 0){ 
+      return this.slice--;
+    }
+    else {
+      console.info('No slices left!');
+    }
+    console.log(`Eaten ${this.slice} slice`);
+}
+
+Pizza.prototype.describe = function(){
+  return `This pizza is for ${this.customer} with toppings ${this.toppings.join(',')} and ${this.slice} slices left`;
 }
 
 const pepperoniPizza = new Pizza(['hamburger', 'pepperoni'], 'Olusegun');
