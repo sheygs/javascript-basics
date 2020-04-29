@@ -1,0 +1,1 @@
+// refactor using prototypal inheritance
