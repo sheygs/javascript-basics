@@ -34,3 +34,18 @@ const p = wrapper.querySelector('p');
 console.log($('p'));
 console.log(lookFor('p'));
 
+
+const bill = {
+   total: 1000,
+   calculate: function(taxRate){
+      console.log(this);
+      return this.total + (this.total * taxRate);
+   }
+}
+
+const amount = bill.calculate(0.3);
+const amount1 = bill.calculate.bind({ total: 500 }, 0.65);
+// amount1()
+
+const amount2 = bill.calculate.call({ total: 600 }, 0.12);
+const amount3 = bill.calculate.apply(bill, [0.25]);

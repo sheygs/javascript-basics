@@ -9,3 +9,5 @@
 - The `apply()` method calls a function with a given `this` value, and `arguments` provided as an array. 
 - `apply()` accepts a __single array of arguments__.
 
+
+- `.bind()` returns a function that needs to be called by itself; `.call()` runs the function immediately
