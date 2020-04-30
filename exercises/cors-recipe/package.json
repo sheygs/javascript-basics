@@ -1,0 +1,16 @@
+{
+  "name": "cors-recipe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sheygs13",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": [
+    "last 3 Chrome versions"
+  ]
+}
