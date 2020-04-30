@@ -1,4 +1,4 @@
-const username = 'sheygs13';
+const username = 'getify';
 const baseEndPoint = 'https://api.github.com'
 const userEndPoint = `${baseEndPoint}/users`;
 const el = document.querySelector('.user');
@@ -12,6 +12,7 @@ async function getUser(user){
    el.textContent = 'loading...';
    const response = await fetch(`${userEndPoint}/${user}`);
    const data = await response.json();
+   console.log(data);
    el.textContent = `${data.name} - ${data.company}`;
 } 
 
