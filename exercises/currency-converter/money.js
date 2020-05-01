@@ -1,3 +1,7 @@
+const fromSelectOptions = document.querySelector('[name="from_currency"]');
+const toSelectOptions = document.querySelector('[name="to_currency"]');
+
+
 const currencies = {
  USD: 'United States Dollar',
  AUD: 'Australian Dollar',
@@ -34,5 +38,12 @@ const currencies = {
 };
 
 
+function populateOptions(options){
+  return Object.entries(options).map(([currencyCode, currency]) => {
+     return `<option value=${currencyCode}>${currencyCode} - ${currency}</option>`;
+  }).join('');
+}
 
-console.log('Yayy');
+const optionsHTML = populateOptions(currencies);
+fromSelectOptions.innerHTML = optionsHTML;
+toSelectOptions.innerHTML = optionsHTML;
