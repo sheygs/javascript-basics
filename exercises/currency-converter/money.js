@@ -81,6 +81,10 @@ function formatCurrency(amount, currency){
   })
 }
 
+function decimalPlaceFormat(amount){
+  return parseFloat(amount.toFixed(2));
+}
+
 async function handleInput(e){
   e.preventDefault();
   const amount = await convertRates(
@@ -88,7 +92,7 @@ async function handleInput(e){
    fromSelectOptions.value, 
    toSelectOptions.value,
   );
-  toAmount.textContent = formatCurrency(amount, toSelectOptions.value);
+  toAmount.textContent = formatCurrency(decimalPlaceFormat(amount), toSelectOptions.value);
 }
 
 const optionsHTML = populateOptions(currencies);
