@@ -1,3 +1,6 @@
+const form = document.querySelector('form');
+const fromAmount = document.querySelector('[name="from_amount"]');
+const toAmount = document.querySelector('.to_amount');
 const fromSelectOptions = document.querySelector('[name="from_currency"]');
 const toSelectOptions = document.querySelector('[name="to_currency"]');
 const endpoint = 'https://api.exchangeratesapi.io/latest'
@@ -71,8 +74,28 @@ async function convertRates(amount, fromCurrency, toCurrency){
 }
 
 
+function formatCurrency(amount, currency){
+  return amount.toLocaleString('en-US',{
+   style: 'currency',
+   currency
+  })
+}
 
+async function handleInput(e){
+  e.preventDefault();
+  const amount = await convertRates(
+   fromAmount.value, 
+   fromSelectOptions.value, 
+   toSelectOptions.value,
+  );
+  toAmount.textContent = formatCurrency(amount, toSelectOptions.value);
+}
 
 const optionsHTML = populateOptions(currencies);
 fromSelectOptions.innerHTML = optionsHTML;
 toSelectOptions.innerHTML = optionsHTML;
+
+
+// listen for multiple input elements on a form using 'change' event
+// 'input' event works too
+form.addEventListener('input', handleInput);
