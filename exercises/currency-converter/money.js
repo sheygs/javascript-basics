@@ -1,6 +1,7 @@
 const fromSelectOptions = document.querySelector('[name="from_currency"]');
 const toSelectOptions = document.querySelector('[name="to_currency"]');
 const endpoint = 'https://api.exchangeratesapi.io/latest'
+const cache = {};
 
 const currencies = {
  USD: 'United States Dollar',
@@ -52,9 +53,24 @@ async function fetchRates(base='CAD'){
 }
 
 
-async function convertRates(){
- 
+async function convertRates(amount, fromCurrency, toCurrency){
+  // first check the cache if we have rates to convert from that currency
+  if (!cache[fromCurrency]){
+     console.info(`${fromCurrency} to be converted to ${toCurrency} not in cache.`);
+     // fetch currency
+     const rates = await fetchRates(fromCurrency);
+      // store in cache for next time
+     cache[fromCurrency] = rates;
+  }
+
+    const rate = cache[fromCurrency].rates[toCurrency];
+    // convert the amount that they passed in
+    const convertedAmount = amount * rate;
+  
+  return convertedAmount;
 }
+
+
 
 
 const optionsHTML = populateOptions(currencies);
