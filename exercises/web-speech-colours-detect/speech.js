@@ -5,16 +5,15 @@ import { colorsByLength, isDark } from './colours';
 const colorsEl = document.querySelector('.colors');
 
 function displayColors(colors){
-  return colors.map(color => `<span class="color ${isDark(color) ? 'dark' : ''}" style="background:${color}">${color}</span>`).join(''); 
+  return colors.map(color => `<span class="color ${color} ${isDark(color) ? 'dark' : ''}" style="background:${color}">${color}</span>`).join(''); 
 }  
 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 function start() {
- // check for browser supports
 
- // or window.hasOwnProperty('SpeechRecognition')
- if (!('SpeechRecognition' in window)){
+ // check for browser supports
+ if (!('SpeechRecognition' in window) || !window.hasOwnProperty('SpeechRecognition')){
    alert('Sorry your browser does not support speech recogntion');
    return;
  }
