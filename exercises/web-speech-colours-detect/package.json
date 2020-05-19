@@ -1,0 +1,16 @@
+{
+  "name": "web-speech-colours-detect",
+  "version": "1.0.0",
+  "main": "speech.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Olusegun O. Ekoh <segun.ekoh@gmail.com> (https://olusegunekoh.netlify.app/)",
+  "license": "ISC",
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "devDependencies": {
+    "parcel-bundler": "1.12.4"
+  }
+}

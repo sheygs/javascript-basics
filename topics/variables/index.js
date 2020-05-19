@@ -1,21 +1,23 @@
-/* line below necessary to disable eslint rules  for illustration */
-/* eslint-disable */ 
-'use strict';
-var name;  // declaration
-console.log(name);  // undefined
-
-var first = 'Olusegun'; // Declaration & Assignment
-first = 'Segun'; // Reassignment
-
-let age = '24'; // Declaration & Initialisation
-age = '25'; // Reassignment
-
-let a; // Declaration
-a = 100; // Assignment
-console.log(a); // usage
-
-const gender = 'Male';
-//gender = 'Female'; // error
-
-// isMarried = false;  
-// console.log(isMarried); 
+/* eslint-disable */
+// declaration
+var name;
+// undefined
+console.log(name);
+// declaration & assignment
+var first = 'Olusegun';
+// re-assignment
+first = 'Segun';
+// declaration & initialisation
+var age = '24';
+// reassignment
+age = '25';
+// declaration
+var a;
+// assignment
+a = 100;
+// usage
+console.log(a);
+var gender = 'Male';
+// gender = 'Female';
+var isMarried = false;
+console.log(isMarried);
